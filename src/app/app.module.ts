@@ -16,7 +16,7 @@ import {HttpModule} from '@angular/http'
 import { UserService } from './user.service';
 import {AngularFirestoreModule} from '@angular/fire/firestore'
 import { AuthService } from './auth.service';
-
+import {ShareModule} from './share.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -29,7 +29,7 @@ import { AuthService } from './auth.service';
       AngularFireAuthModule,
       AngularFirestoreModule,
       HttpModule,
-
+      ShareModule
     ],
 
   providers: [
@@ -37,7 +37,8 @@ import { AuthService } from './auth.service';
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     UserService,
-    AuthService
+    AuthService,
+    
 
   ],
   bootstrap: [AppComponent]
