@@ -11,8 +11,8 @@ const routes: Routes = [
 			{ path: 'uploader', loadChildren: '../uploader/uploader.module#UploaderPageModule' },
 			{ path: 'profile', loadChildren: '../profile/profile.module#ProfilePageModule' },
 			{ path: 'post/:id', loadChildren: '../post/post.module#PostPageModule' },
-
-        ]
+			{ path: 'edit-profile', loadChildren: '../edit-profile/edit-profile.module#EditProfilePageModule' },
+		]
 	}	
 ];
 
