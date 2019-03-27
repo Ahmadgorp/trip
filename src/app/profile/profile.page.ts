@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { AngularFirestore, AngularFirestoreDocument } from '@angular/fire/firestore'
 import { UserService } from '../user.service';
 import { Router } from '@angular/router';
+import { firestore } from 'firebase/app';
+
 
 @Component({
 	selector: 'app-page',
@@ -33,6 +35,10 @@ export class ProfilePage implements OnInit {
 	goTo(postID: string) {
 
 		this.router.navigate(['/tabs/post/' + postID.split('/')[0]])
+	}
+
+	delete(){
+		
 	}
 
 	ngOnInit() {

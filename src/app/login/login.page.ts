@@ -41,4 +41,8 @@ export class LoginPage implements OnInit {
 		}
 	}
 
+	Rigster(){
+		this.router.navigate(['/register'])
+	}
+
 }
